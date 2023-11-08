@@ -1,0 +1,51 @@
+.quiz-container {
+  background-color: #445760;
+  max-width: 50rem;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0.2rem 0;
+  margin-top: 5rem;
+  border-radius: 8px;
+}
+.notPicked {
+  border: 1px solid #556e7a3d;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0 1rem 1rem 1rem;
+}
+.q-wrapper {
+  border: 1px solid #556e7a3d;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0 1rem 1rem 1rem;
+}
+.q-wrapper h3 {
+  font-size: 24px;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-wrapper button {
+  background-color: #69818a;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.picked {
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0 1rem 1rem 1rem;
+  border: 1px solid #aaaaaa80 !important;
+  background-color: #0072a93d;
+}
+/* #DEDEDE for q #445760 back 556e7an*/
+
+.btn-wrapper button.btn-disabled {
+  background-color: #2f3d42;
+  opacity: 0.6;
+}
