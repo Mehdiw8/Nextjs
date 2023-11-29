@@ -1,0 +1,7 @@
+{
+  "main": [
+    { "title": "dwa", "price": "222" },
+    { "title": "shoes", "price": "222" },
+    { "title": "shoes", "price": "" }
+  ]
+}
