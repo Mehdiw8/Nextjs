@@ -1,0 +1,79 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.btn-liquidWapper {
+  background-color: rgba(41, 175, 23, 0.925);
+  position: relative;
+  padding: 20px 50px;
+  display: block;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 40px;
+  border-color: black;
+}
+.btn-liquidWapper .myButton {
+  position: relative;
+  font-size: 20px;
+  z-index: 1;
+  border: none;
+}
+.btn-liquidWapper .liquid {
+  border: 1px solid red;
+  position: absolute;
+  top: -50px;
+  width: 218px;
+  height: 200px;
+  right: -10px;
+  box-shadow: inset 0 0 50px black;
+  transition: 0.5s;
+}
+.btn-liquidWapper .liquid::after,
+.btn-liquidWapper .liquid::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -76%);
+  background: hsla(219, 88%, 56%, 1);
+  
+}
+.btn-liquidWapper .liquid::before {
+  border-radius: 45%;
+  background: hsla(219, 88%, 56%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(219, 88%, 56%, 1) 0%,
+    hsla(232, 100%, 50%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(219, 88%, 56%, 1) 0%,
+    hsla(232, 100%, 50%, 1) 100%
+  );
+  animation: animate 6s liner infinite;
+}
+.btn-liquidWapper .liquid::after {
+  border-radius: 40%;
+  background-color: rgba(20, 20, 20, 0.3);
+  animation: animate 12s liner infinite;
+}
+.btn-liquidWapper:hover .liquid {
+  top: -120px;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
