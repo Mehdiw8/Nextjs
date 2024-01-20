@@ -3,8 +3,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "https",
-        hostname: "mehdiw8.ir",
+        protocol: "https",// hamin 2ta kafie
+        hostname: "mehdiw8.ir", // hamin 2ta kafie
         port: "",
         pathname: "/static/media/**",
       },
